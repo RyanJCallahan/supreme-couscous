@@ -1,79 +1,54 @@
-# STRUDEL Kit
+# strudel
 
-STRUDEL Kit is a React and TypeScript-based starter kit for building scientific UIs based on the STRUDEL Design System and Task Flows. Visit [strudel.science](https://strudel.science) for more information about the STRUDEL project.
+[![Strudel test status](https://github.com/tidalcycles/strudel/actions/workflows/test.yml/badge.svg)](https://github.com/tidalcycles/strudel/actions) [![DOI](https://zenodo.org/badge/450927247.svg)](https://doi.org/10.5281/zenodo.6659278)
 
-This library provides a suite of templates to implement UIs for various different task flows common to the scientific domain. The app is intended to be used as a starting point for building out a modern single-page web app for scientific-type UIs.
+An experiment in making a [Tidal](https://github.com/tidalcycles/tidal/) using web technologies. This software is a bit more stable now, but please continue to tread carefully.
 
-[Browse the full docs](https://strudel.science/strudel-kit/docs/)
+- Try it here: <https://strudel.cc>
+- Docs: <https://strudel.cc/learn>
+- Technical Blog Post: <https://loophole-letters.vercel.app/strudel>
+- 1 Year of Strudel Blog Post: <https://loophole-letters.vercel.app/strudel1year>
+- 2 Years of Strudel Blog Post: <https://strudel.cc/blog/#year-2>
 
-## What's included?
-- [**React**](https://react.dev/): A component-based JavaScript library for building UIs.
-- [**TypeScript**](https://www.typescriptlang.org/): A typed superset of JavaScript that compiles to plain JavaScript.
-- [**Vite**](https://vite.dev/): A fast, opinionated frontend build tool.
-- [**Material UI**](https://mui.com/material-ui/getting-started/): Open-source React component library based on Google's Material Design.
-- [**TanStack Router**](https://tanstack.com/router/latest): A fully type-safe router with built-in data fetching, first-class search-param APIs, and more.
-- [**ESLint**](https://eslint.org/): The pluggable linting utility for JavaScript and JSX.
-- [**Prettier**](https://prettier.io/): An opinionated code formatter.
-- [**Husky**](https://typicode.github.io/husky/): Runs a pre-commit hook to lint and style staged code.
-- [**Cypress**](https://www.cypress.io/): End-to-end tests for built-in templates.
-- [**Task Flow Templates**](https://strudel.science/design-system/task-flows/overview/): Six template flows based on common patterns. 
+## Running Locally
 
-![Home page](images/home.png)
+After cloning the project, you can run the REPL locally:
 
-![Run Computation results page](images/run-computation-results.png)
+1. Install [Node.js](https://nodejs.org/)
+2. Install [pnpm](https://pnpm.io/installation)
+3. Install dependencies by running the following command:
+   ```bash
+   pnpm i
+   ```
+4. Run the development server:
+   ```bash
+   pnpm dev
+   ```
 
-## Getting Started
+## Using Strudel In Your Project
 
-### Option 1: Use this template
+This project is organized into many [packages](./packages), which are also available on [npm](https://www.npmjs.com/search?q=%40strudel).
 
-Click the green "Use this template" button on the [strudel-kit GitHub page](https://github.com/strudel-science/strudel-kit). Create your own repository from the strudel-kit code and give it a name.
+Read more about how to use these in your own project [here](https://strudel.cc/technical-manual/project-start).
 
-Clone the strudel-kit repository from your new repo.
+You will need to abide by the terms of the [GNU Affero Public Licence v3](LICENSE.md). As such, Strudel code can only be shared within free/open source projects under the same license -- see the license for details.
 
-### Option 2: degit
+Licensing info for the default sound banks can be found over on the [dough-samples](https://github.com/felixroos/dough-samples/blob/main/README.md) repository.
 
-Generate a new project from strudel-kit using [degit](https://github.com/Rich-Harris/degit):
-```
-npx degit strudel-science/strudel-kit my-app
-```
+## Contributing
 
-### Option 3: Fork this repo
+There are many ways to contribute to this project! See [contribution guide](./CONTRIBUTING.md).
 
-Especially if you want to contribute back, you can click the Fork button to create a fork of this repo from the [strudel-kit GitHub page](https://github.com/strudel-science/strudel-kit).
+<a href="https://github.com/tidalcycles/strudel/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=tidalcycles/strudel" />
+</a>
 
-Clone the strudel-kit repository from your new fork.
+Made with [contrib.rocks](https://contrib.rocks).
 
-### Install and Start
+## Community
 
-Install the dependencies:
+There is a #strudel channel on the TidalCycles discord: <https://discord.com/invite/HGEdXmRkzT>
 
-```
-npm install
-```
+You can also ask questions and find related discussions on the tidal club forum: <https://club.tidalcycles.org/>
 
-Start up the app:
-
-```
-npm start
-```
-
-Open [http://localhost:5175](http://localhost:5175) to view the app in the browser.
-
-Begin modifying the templates in `src/pages`.
-
-## Contributions
-
-STRUDEL Kit welcomes contributions of all kinds! Learn how to submit suggestions and changes in [CONTRIBUTING.md](https://github.com/strudel-science/strudel-kit/blob/main/CONTRIBUTING.md).
-
-## License 
-
-This software is licensed through the [Lawrence Berkeley National Lab](https://www.lbl.gov/) and can be used, modified, and shared at absolutely no cost. [Read the full license](https://github.com/strudel-science/strudel-kit/blob/main/LICENSE).
-
-## Attribution
-
-We kindly ask that you take two steps to attribute this repo if you find it useful to your work:
-
-1. Give us a star on our GitHub Page
-2. Credit the STRUDEL project and strudel-kit repo in your README.
-
-> This project utilized the [strudel-kit](https://github.com/strudel-science/strudel-kit/tree/main) repository. Read more about [STRUDEL](https://strudel.science).
+The discord and forum is shared with the haskell (tidal) and python (vortex) siblings of this project.
